@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+@source '../**/*.vue';
+
+@theme {
+  /* Brand */
+  --color-brand: #0066FF;
+  --color-brand-light: #E8F0FE;
+
+  /* Reward (cashback green) */
+  --color-reward: #16A34A;
+  --color-reward-light: #DCFCE7;
+  --color-reward-glow: #22C55E;
+
+  /* Gold (ranking) */
+  --color-gold: #D97706;
+  --color-gold-light: #FEF3C7;
+
+  /* Surface (elevation system) */
+  --color-surface-0: #F8FAFC;
+  --color-surface-1: #FFFFFF;
+  --color-surface-2: #F1F5F9;
+
+  /* Ink (text hierarchy) */
+  --color-ink: #0F172A;
+  --color-ink-secondary: #475569;
+  --color-ink-muted: #94A3B8;
+
+  /* Semantic */
+  --color-destructive: #DC2626;
+
+  /* Borders */
+  --color-border: rgba(15, 23, 42, 0.08);
+  --color-border-emphasis: rgba(15, 23, 42, 0.15);
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Border Radius */
+  --radius-btn: 8px;
+  --radius-card: 12px;
+  --radius-modal: 16px;
+
+  /* Animation */
+  --animate-pulse-slow: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@layer base {
+  html {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}

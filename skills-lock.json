@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "building-admin-dashboard-customizations": {
+      "source": "medusajs/medusa-agent-skills",
+      "sourceType": "github",
+      "computedHash": "4cd60098a12fcfd682ae4f7668bd1cf0c5986c27e2ebfcf45166e3d69c4e5f1c"
+    }
+  }
+}
